@@ -1,38 +1,368 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0%;
+}
+
+body {
+  background-color: rgb(157, 182, 196);
+
+}
+
+/*ESTRUTURA COMPLETA DA PAGINA*/
+.window {
+  background-color: rgb(180, 186, 189);
+  height: 1600px;
+}
+
+/*ESTILOS REFERENTES AO COMPONENTE RAIZ APP (Banners)*/
+
+.bnnsPage {
+  display: flex;
+}
+
+/*ESTILOS REFERENTES AO COMPONENTE TOPO*/
+
+.topo {
+  background-color: rgb(154, 32, 8);
+  padding: 18px;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  box-shadow: 7px 2px 7px rgb(218, 218, 209);
+}
+
+.logo {
+  display: flex;
+  margin-left: 80px;
+  text-shadow: 3px 1px 1px yellow;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.imgLogo {
+  width: 160px;
+}
+
+.imgItalia {
+  width: 100px;
+}
+
+/*ESTILOS REFERENTES AO COMPONENTE MENU*/
+
+.menuBar {
+  display: flex;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 180px;
+}
+
+.menuBar a {
+  color: red;
+  text-decoration: none;
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px yellow;
+  font-style: italic;
+}
+
+/*ESTILOS REFERENTES AO COMPONENTE BANNER*/
+.bannerStructure {
+  width: 35%;
+  text-align: center;
+  height: 900px;
+  background-color: rgb(157, 182, 196);
+  margin-top: 100px;
+}
+
+.structureImgBanner {
+  height: 500px;
+}
+
+.banner {
+  width: 600px;
+  margin-right: 100px;
+}
+
+.fraseBanner h2 {
+  font-size: 30px;
+  font-family: 'Mukta', sans-serif;
+  margin-bottom: 2px;
+  font-size: 40px;
+  text-shadow: 2px 1px 2px rgb(19, 19, 19);
+  color: red;
+}
+
+h2.segundaFrase {
+  color: green;
+  text-shadow: 7px 2px 5px rgb(6, 175, 91);
+}
+
+h3.terceiraFrase {
+  color: red;
+  text-shadow: 2px 2px 2px yellow;
+  font-size: 45px;
+  margin-top: 20px;
+  font-weight: bold;
+
+}
+
+h3.fraseDS {
+  color: black;
+  text-shadow: 3px 2px 6px yellow;
+  font-size: 45px;
+}
+
+.btnsBannerLeft {
+  margin-top: 4%;
+
+}
+
+.btnsBannerLeft button {
+  border: 3px solid yellow;
+  border-radius: 10px;
+  margin-right: 2%;
+  padding: 15px;
+  background-color: red;
+  font-weight: bold;
+  color: yellow;
+}
+
+/*ESTILOS REFERENTES AO COMPONENTE BANNERRIGHT*/
+
+.bnnRightStructure {
+  background-color: yellow;
+}
+
+img.imgBanner2 {
+  width: 107%;
+  height: 100%;
+}
+
+/*COMPORTAMENTOS DOS BOTÕES QUANDO O MOUSER ESTIVER ME CIMA DOS COMPS MENU E BANNER*/
+
+.menuBar a:hover {
+  border-top: 2px solid yellow;
+}
+
+.btnsBannerLeft button:hover {
+  background-color: yellow;
+  color: red;
+  border: 2px dotted black;
+}
+
+/*ESTILOS REFERENTES AO COMPONENTE OPCOES PIZZAS*/
+
+.structureListasPizzas {
+  background-color: rgb(157, 182, 196);
+
+}
+
+.PizzasReference {
+  background-color: rgb(157, 182, 196);
+  height: 810px;
+  margin-bottom: 8%;
+
+}
+
+.PizzasReference p {
+  font-size: 40px;
+}
+
+
+.frase {
+  color: white;
+  background-color: red;
+  text-shadow: 2px 2px 8px yellow;
+
+}
+
+ul.lista1,
+.lista2 {
+  list-style: none;
+  height: 300px;
+  display: flex;
+  margin-left: 6%;
+}
+
+li {
+  margin-right: 3%;
+  text-align: center;
+  text-shadow: 2px 2px 2px yellow;
+}
+
+
+img.pizza1,
+.pizza2,
+.pizza3,
+.pizza4,
+.pizza5,
+.pizza6,
+.pizza7,
+.pizza8,
+.pizza9,
+.pizza10 {
+  width: 250px;
+  margin-left: 2%;
+  height: 122px;
+}
+
+
+
+button.btnPedido {
+  background-color: green;
+  color: white;
+  border: 3px solid white;
+  font-size: 25px;
+  margin-left: 15%;
+}
+
+button.btnVerCardapioTodo {
+  margin-left: 43%;
+  font-size: 30px;
+  margin-bottom: 2%;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  border: 4px groove yellow;
+
+}
+
+/*COMPORTAMENTOS DOS BOTÕES QUANDO O MOUSE ESTIVER EM CIMA (REFERENTE AO COMP OPCOESPIZZAS)*/
+
+button.btnPedido:hover {
+  background-color: rgb(12, 237, 83);
+  padding: 2px;
+}
+
+button.btnVerCardapioTodo:hover {
+  background-color: rgb(221, 166, 3);
+  color: black;
+  text-shadow: 2px 2px 2px white;
+}
+
+/*ESTILOS REFERENTES AO COMPONENTE OPCOESDOCES*/
+
+.structureOpDoces {
+  display: block;
+  background-color: rgb(155, 175, 186);
+  height: 500px;
+}
+
+.structureOpDoces li {
+  list-style: none;
+}
+
+.legendaSobreMesas {
+  color: red;
+  text-shadow: 2px 2px 2px black;
+  font-size: 30px;
+  background-color: yellow;
+  height: 70px;
+}
+
+ul.listaDoces {
+  display: flex;
+}
+
+img.doce1,
+.doce2,
+.doce3,
+.doce4,
+.doce5,
+.doce6 {
+  width: 150px;
+  margin-top: 70px;
+  height: 150px;
+}
+
+.legendaDoce,
+.legendaDoce2,
+.legendaDoce3,
+.legendaDoce4,
+.legendaDoce5,
+.legendaDoce6 {
+  color: black;
+  text-shadow: 2px 2px 2px white;
+  font-size: 35px;
+
+}
+
+
+/*ESTILOS REFERENTES AO COMPONENTE AVALIACAO*/
+
+.structureAvaliacao {
+  height: 600px;
+  background-color: rgb(155, 175, 186);
+  display: block;
+
+
+}
+
+.legendaAv {
+  font-size: 30px;
+  margin-left: 2%;
+}
+
+.structureAvaliacao input {
+  margin-left: 2%;
+  width: 16%;
+  height: 30px;
+  font-size: 20px;
+}
+
+.structureAvaliacao textarea {
+  margin-left: 2%;
+  font-size: 25px;
+  height: 300px;
+  width: 40%;
+}
+
+.structureAvaliacao button {
+  font-size: 30px;
+  margin-left: 2%;
+
+}
+
+/*COMPORTAMENTO REFERENTE AO BOTÃO DO COMPONENTE AVALIACAO QUANDO O MOUSE ESTIVER SOBRE*/
+
+button.btnEnviarAvaliacao:hover {
+  background-color: green;
+  color: white;
+  border: 3px solid white;
+
+}
+
+/*ESTILOS REFERENTE AO COMPONENTE FOOTER*/
+
+
+.rodape {
+  background-color: rgb(154, 32, 8);
+  height: 300px;
+  display: flex;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.contatos,
+.localizacao,
+.horarioAtendimento,
+.venha {
+  margin-left: 6.5%;
+  margin-right: 5%;
+  margin-top: 2%;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.legendaRodape {
+  margin-top: 2%;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+img.iconeRodape {
+  width: 30px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.numContato {
+  font-size: 20px;
 }
